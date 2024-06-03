@@ -4,6 +4,11 @@ import cookieParser from "cookie-parser";
 
 const app = express();
 
+// // Serve static files from the 'frontend' directory
+// app.use(express.static('frontend'));
+
+// // Add a MIME type for JavaScript files
+// express.static.mime.define({ 'application/javascript': ['js'] });
 
 app.use(cors({
     origin: process.env.CORS_ORIGIN,
